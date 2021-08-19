@@ -1,0 +1,125 @@
+.location {
+  padding: 102px 0;
+  background-color: $DarkNavy;
+  background: {
+    image: url("/img/three-circle.png");
+    repeat: no-repeat;
+    position: calc(50% + 400px) 150px;
+  };
+  font-family: "Space Mono", sans-serif;
+}
+.location__block {
+  display: flex;
+  align-items: center;
+}
+.location__header {
+  width: 415px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  /* or 100% */
+
+  letter-spacing: -2.14286px;
+
+  color: #FFFFFF;
+}
+.location__img {
+  margin-left: auto;
+}
+@include breakpoint-down (1000px) {
+  .location {
+    padding: 88px 0;
+    background-color: $DarkNavy;
+    background: {
+      image: url("/img/three-circle.png");
+      repeat: no-repeat;
+      position: calc(50% - 200px) 150px;
+    };
+    font-family: "Space Mono", sans-serif;
+  }
+  .location__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .location__header {
+    width: 457px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+  }
+  .location__img {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-left: 0px;
+  }
+  .location__image {
+    width: 113px;
+    height: 40px;
+    &:first-child{
+      margin-right: 12px;
+    }
+    &:last-child {
+      margin-left: 12px;
+    }
+
+  }
+
+}
+@include breakpoint-down (650px) {
+  .location {
+    padding: 88px 0;
+    background-color: $DarkNavy;
+    background: {
+      image: url("/img/three-circle.png");
+      repeat: no-repeat;
+      position: calc(50% - 200px) 150px;
+    };
+    font-family: "Space Mono", sans-serif;
+  }
+  .location__block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .location__header {
+    width: 311px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -2.14286px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+  }
+  .location__img {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-left: 0px;
+  }
+  .location__image {
+    width: 113px;
+    height: 40px;
+    &:first-child{
+      margin-right: 12px;
+    }
+    &:last-child {
+      margin-left: 12px;
+    }
+
+  }
+
+}

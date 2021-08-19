@@ -1,0 +1,114 @@
+.category-section {
+  padding-top: 160px;
+  padding-bottom: 147px;
+  font-family: "Lexend Deca", sans-serif;
+}
+.category_inner {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2!important;
+  position: relative;
+}
+.category_inner::before {
+  content: "";
+  width: 974px;
+  height: 15px;
+  background-color: $LightGrey;
+  position: absolute;
+  left: -215px;
+  top: 40px;
+  z-index: -1!important;
+}
+.category__item {
+  width: 31%;
+}
+.category__img {
+  margin-bottom: 40px;
+  width: 96px;
+  height: 96px;
+}
+.category__text-title {
+  font-family: "Space Mono", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: $DarkNavy;
+  margin-bottom: 27px;
+}
+.category__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $DimGrey;
+}
+@include breakpoint-down (1000px) {
+  .category-section {
+    padding-top: 122px;
+    padding-bottom: 92px;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  .category_inner {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2!important;
+    padding-left: 81px;
+    padding-right: 82px;
+    position: relative;
+  }
+  .category_inner::before {
+    content: "";
+    width: 15px;
+    height: 630px;
+    background-color: $LightGrey;
+    position: absolute;
+    left: 120px;
+    top: -120px;
+    z-index: -1!important;
+  }
+  .category__item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 74px;
+  }
+  .category__img {
+    margin-right: 74px;
+  }
+
+}
+
+
+@include breakpoint-down (650px) {
+  .category-section {
+    padding-top: 138px;
+    padding-bottom: 83px;
+  }
+  .category_inner {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .category_inner::before {
+    content: "";
+    display: none;
+  }
+  .category__item {
+    width: 100%;
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 17px;
+    display: block!important;
+  }
+  .category__box {
+  }
+  .category__img {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,134 @@
+.intro-section {
+  font-family: "Space Mono", sans-serif;
+  padding-top: 153px;
+  padding-bottom: 153px;
+  background: {
+    image: linear-gradient(90deg, rgba(3, 61, 87, 0.7), rgba(3, 61, 87, 0.7)), url("/img/intobgi.png") ;
+    repeat: no-repeat;
+    size: cover;
+
+  };
+
+}
+.intro__header {
+  width: 500px;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+.intro-block {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+
+.block__text {
+  width: 405px;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-left: 57px;
+}
+.block__btn {
+  @include site-btn;
+  box-sizing: border-box;
+  transition: all .3s linear;
+  margin-top: 40px;
+  &:hover {
+    border: 3px solid $yellow;
+    background-color: transparent;
+    color: $yellow;
+  }
+  &:active {
+    background-color: $LightYellow;
+  }
+
+}
+.block__img1 {
+  position: absolute;
+  top: 54px;
+  left: calc(50% - 750px);
+}
+.block__img2 {
+  position: absolute;
+  top: 54px;
+  left: calc(50% - 35px);
+}
+@include breakpoint-down (1000px) {
+  .intro-section {
+    padding-top: 137px;
+    padding-bottom: 217px;
+  }
+  .intro__container {
+    width: 100%;
+  }
+  .block__text {
+    width: 573px!important;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 57px;
+  }
+  .intro__header {
+    width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+  }
+  .intro-block {
+    display: block;
+    text-align: center;
+
+  }
+  .block__img1 {
+
+  }
+  .block__text {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .block__img2 {
+    top: 190px;
+    left: calc(50% - 470px);
+  }
+}
+
+@include breakpoint-down (650px) {
+  .intro__container {
+    width: 100%;
+  }
+  .intro__header {
+    width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.78571px;
+  }
+  .intro-block {
+    display: block;
+
+  }
+  .block__img1 {
+
+  }
+  .block__text {
+    width: 100%!important;
+    margin-left: 0;
+  }
+  .block__img2 {
+    top: 250px;
+    left: calc(50% - 340px);
+  }
+}
